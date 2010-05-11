@@ -1,0 +1,1053 @@
+
+@import url(/weblocks-demo/pub/stylesheets/vzn/table.0.css);
+
+@import url(/weblocks-demo/pub/stylesheets/vzn/form.0.css);
+body
+{
+/*  background: url(/weblocks-common/pub/images/page/background.png);*/
+  text-align: center;
+  background: #001D23;
+}
+
+div.page-wrapper
+{
+  max-width: 70em;
+  min-width: 60em;
+
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* IE 6 specific hacks (has layout and min-width)*/
+* html div.page-wrapper
+{
+  width: 70em;
+}
+
+.page-wrapper .page-extra-top-1,
+.dialog .dialog-extra-top-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/page/top_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-top-2,
+.dialog .dialog-extra-top-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/page/top_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-top-3,
+.dialog .dialog-extra-top-3
+{
+  height: 5px;
+  margin-top: -5px;
+  margin-left: 5px;
+  margin-right: 5px;
+/*  background: url(/weblocks-common/pub/images/page/hor_border.png) repeat-x top;*/
+  overflow: hidden;
+}
+
+div#root, .dialog-body, .dialog h1
+{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+div#root
+{
+  padding: 1em;
+  min-height: 60em;
+  background-color: white;
+}
+
+/* IE 6 specific hacks (has layout and min-height)*/
+* html div#root
+{
+  height: 60em;
+}
+
+div#main-menu
+{
+  position: relative;
+}
+
+div#main-menu div.navigation-body
+{
+  margin-left: 16em;
+}
+
+div#main-menu div.menu
+{
+  position: absolute;
+  top: 0;
+}
+
+.page-wrapper .page-extra-bottom-1,
+.dialog .dialog-extra-bottom-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/page/bottom_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-bottom-2,
+.dialog .dialog-extra-bottom-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/page/bottom_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-bottom-3,
+.dialog .dialog-extra-bottom-3
+{
+  height: 5px;
+  margin-top: -5px;
+  margin-left: 5px;
+  margin-right: 5px;
+/*  background: url(/weblocks-common/pub/images/page/hor_border_bottom.png) repeat-x top;*/
+  overflow: hidden;
+}
+
+.header
+{
+  height: 52px;
+/*  background: url(/weblocks-common/pub/images/header/background.png) repeat-x;*/
+  margin-top: -5px;
+  margin-bottom: 1em;
+}
+
+.header .extra-top-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/header/top_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.header .extra-top-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/header/top_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.header .extra-top-3
+{
+  height: 42px;
+  margin-left: 5px;
+/*  background: url(/weblocks-common/pub/images/header/logo.png) no-repeat center left;*/
+}
+
+.header .extra-bottom-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/header/bottom_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.header .extra-bottom-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/header/bottom_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.footer
+{
+  margin-top: 1em;
+}
+
+.footer p#system-info
+{
+  margin-bottom: 0;
+}
+
+.footer p#contact-info
+{
+  margin-top: 0;
+}
+
+
+
+body
+{
+  font-size: small;
+  font-family: arial, helvetica, sans-serif;
+}
+
+a
+{
+  color: #A61E2E;
+}
+
+.view
+{
+/*  background: #ecf8d7 url(/weblocks-common/pub/images/widget/top_background.png) repeat-x;*/
+  margin-bottom: 1em;
+  _height: 0; /* IE specific hasLayout fix */
+}
+
+.view h1, .view fieldset h1
+{
+  background-color: #ecf8d7;
+}
+
+.view .extra-top-1
+{
+  height: 7px;
+/*  background: url(/weblocks-common/pub/images/widget/top_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.view .extra-top-2
+{
+  height: 7px;
+  margin-top: -7px;
+/*  background: url(/weblocks-common/pub/images/widget/top_right.png) no-repeat top right;*/
+  border-bottom: 1px solid #dbeac1;
+  overflow: hidden;
+}
+
+.view h1, .view fieldset h1,
+.long-form fieldset .validation-errors-summary h2.error-count
+{
+  margin: 0;
+  padding: 0;
+  padding-left: 0.4em;
+}
+
+.view h1, .view fieldset h1, .table table caption, div.empty p,
+.view .empty-navigation, .view ul li, .view fieldset ul li,
+.view table thead tr th,
+.view fieldset div.submit, .view div.submit,
+.long-form fieldset .validation-errors-summary h2.error-count,
+.form fieldset .validation-errors-summary .non-field-validation-errors
+{
+  border-top: 1px solid #fcfef6;
+}
+
+.view h1, .view fieldset h1, .table table caption, div.empty p,
+.view .empty-navigation, .view ul li, .view fieldset ul li,
+.view table thead tr th,
+.view fieldset div.submit, .view div.submit,
+.long-form fieldset .validation-errors-summary,
+.form fieldset .validation-errors-summary .non-field-validation-errors
+{
+  border-bottom: 1px solid #dbeac1;
+}
+
+.view h1, .view fieldset h1, .table table caption, div.empty p,
+.view .empty-navigation, .view ul, .view fieldset ul, .table table,
+.view fieldset div.submit, .view div.submit,
+.long-form fieldset .validation-errors-summary h2.error-count
+{
+  border-left: 2px solid #dbeac1;
+  border-right: 2px solid #dbeac1;
+}
+
+h1, h2
+{
+  font-size: large;
+  color: #29364F;
+  font-weight: bold;
+  font-family: Garamond, New York, serif;
+}
+
+.view h1 .action, .view fieldset h1 .action
+{
+  display: none;
+}
+
+.view ul, .view fieldset ul, .table table, .view fieldset div.submit,
+.view div.submit
+{
+  padding-left: 0;
+  margin: 0;
+}
+
+.view ul li, .view fieldset ul li, .menu ul li a
+{
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+.view div.submit, .form fieldset div.submit
+{
+  padding-left: 13.5em;
+}
+
+.view ul li .label, .view fieldset ul li label span.slot-name,
+.table table thead
+{
+  color: #808080;
+  font-weight: bold;
+}
+
+.view ul li .label, .view fieldset ul li label span.slot-name
+{
+  display: -moz-inline-box;
+  display: inline-block;
+  width: 12em;
+}
+
+.view .extra-bottom-1
+{
+  height: 7px;
+/*  background: url(/weblocks-common/pub/images/widget/bottom_background.png) repeat-x top;*/
+  overflow: hidden;
+}
+
+.view .extra-bottom-2
+{
+  height: 7px;
+  margin-top: -7px;
+/*  background: url(/weblocks-common/pub/images/widget/bottom_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.view .extra-bottom-3
+{
+  height: 7px;
+  margin-top: -7px;
+/*  background: url(/weblocks-common/pub/images/widget/bottom_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.missing
+{
+  font-style: italic;
+  color: #808080;
+}
+
+input[type=hidden]
+{
+  visibility: hidden;
+}
+
+#ajax-progress
+{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+/* IE 6 specific progress bar fix */
+* html #ajax-progress
+{
+  position: absolute;
+  left: expression((documentElement.scrollLeft
+                     + (documentElement.clientWidth - this.clientWidth))
+                   + 'px')
+  top: expression(documentElement.scrollTop + 'px');
+}
+
+/* Common styles for form, and data */
+.data, .form
+{
+  width: 27em;
+}
+
+/* Close button */
+span.close-button 
+{
+  display: block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+span.close-button a
+{
+  /* background: url(/weblocks-common/pub/images/close.png) no-repeat top left; */
+  padding-left: 1000em;
+}
+
+span.close-button a:hover
+{
+  /* background: url(/weblocks-common/pub/images/close_hl.png) no-repeat top left; */
+}
+
+/* Total Items */
+span.total-items
+{
+  color: gray;
+  font-size: x-small;
+}
+
+/* Text */
+.ellipsis
+{
+  color: gray;
+  font-weight: bold;
+}
+
+p.text
+{
+  margin: 0;
+}
+
+.view ul li p.text
+{
+  margin-left: 0.5em;
+}
+
+/* No elements */
+div.empty p
+{
+  padding-left: 0.5em;
+  margin: 0;
+}
+
+div.empty p span.caption
+{
+  color: #29364F;
+  font-weight: bold;
+  font-family: Garamond, New York, serif;
+}
+
+
+
+.graybox
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  z-index: 500;
+
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
+
+/* IE 6 specific fix for lack of 'position: fixed' implementation */
+* html .graybox
+{
+  position: absolute;
+  left: expression(documentElement.scrollLeft + 'px');
+  top: expression(documentElement.scrollTop + 'px');
+  width: expression(document.documentElement.clientWidth + 'px');
+  height: expression(document.documentElement.clientHeight + 'px');
+}
+
+.dialog
+{
+  position: fixed;
+  _position: absolute; /* Degrade to this in IE for now */
+  z-index: 725;
+  width: 10em;
+}
+
+.dialog-body
+{
+  padding: 1em;
+  _height: 1%; /* hasLayout */
+  background-color: white;
+}
+
+/* Style choice dialog */
+.choice .dialog-body, .modal .choice
+{
+/*  background: white url(/weblocks-common/pub/images/dialog/question.png) no-repeat 0.5em center;*/
+}
+
+.dialog h1, .modal h1
+{
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.dialog h1 span, .modal h1 span
+{
+/*  background: url(/weblocks-common/pub/images/horizontal_line.png) repeat-x bottom;*/
+  display: block;
+}
+
+.dialog h1 span
+{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.choice
+{
+  text-align: center;
+}
+
+.choice form, .choice form fieldset, .choice p
+{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.choice p
+{
+  margin-bottom: 1em;
+}
+
+.choice input
+{
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+/* Style information dialog */
+.information .dialog-body, .modal .information
+{
+/*  background-image: url(/weblocks-common/pub/images/dialog/information.png);*/
+}
+
+/* Modal interaction */
+.modal
+{
+/*  background: url(/weblocks-common/pub/images/horizontal_line.png) repeat-x bottom;*/
+  padding-bottom: 2px;
+}
+
+.modal h1
+{
+  border: none;
+  margin: 0;
+}
+
+.modal .choice
+{
+  min-height: 48px;
+  _height: 48px;
+  background-position: left center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+
+div.suggest
+{
+  border: solid 1px;
+  background-color: #F6FBFD;
+}
+
+div.suggest ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+div.suggest ul li
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 2px;
+  display: block;
+}
+
+div.suggest ul li.selected
+{
+  background-color: #D8EAF8;
+}
+
+
+.flash .view
+{
+  width: 100%;
+/*  background: #f8e9d8 url(/weblocks-common/pub/images/widget/flash/top_background.png) repeat-x;*/
+}
+
+.flash .view .extra-top-1
+{
+/*  background: url(/weblocks-common/pub/images/widget/flash/top_left.png) no-repeat top left;*/
+}
+
+.flash .view .extra-top-2
+{
+/*  background: url(/weblocks-common/pub/images/widget/flash/top_right.png) no-repeat top right;*/
+  border-bottom-color: #ead8c2;
+}
+
+.flash .view ul.messages p
+{
+  padding: 0;
+  margin: 0;
+}
+
+.flash .view ul.messages
+{ 
+  border-left-color: #ead8c2;
+  border-right-color: #ead8c2;
+}
+
+.flash .view ul.messages li
+{
+  padding-left: 32px;
+  min-height: 16px;
+  border-top-color: #fef9f6;
+  border-bottom-color: #ead8c2;
+  list-style-image: none;
+/*  background: url(/weblocks-common/pub/images/widget/flash/flag.png) no-repeat top left;*/
+}
+
+/* Fake min-height for IE 6 */
+* html .flash .view ul.messages li
+{
+  height: 16px;
+}
+
+.flash .view .extra-bottom-1
+{
+/*  background: url(/weblocks-common/pub/images/widget/flash/bottom_background.png) repeat-x top;*/
+  border-top-color: #fef9f6; 
+}
+
+.flash .view .extra-bottom-2
+{
+/*  background: url(/weblocks-common/pub/images/widget/flash/bottom_left.png) no-repeat top left;*/
+}
+
+.flash .view .extra-bottom-3
+{
+/*  background: url(/weblocks-common/pub/images/widget/flash/bottom_right.png) no-repeat top right;*/
+}
+
+
+
+.menu
+{
+  width: 15em;
+/*  background: #d8eaf8 url(/weblocks-common/pub/images/menu/top_background.png) repeat-x;*/
+}
+
+.menu h1
+{
+  background: #d8eaf8;
+}
+
+.menu .extra-top-1
+{
+/*  background: url(/weblocks-common/pub/images/menu/top_left.png) no-repeat top left;*/
+}
+
+.menu .extra-top-2
+{
+/*  background: url(/weblocks-common/pub/images/menu/top_right.png) no-repeat top right;*/
+  border-bottom-color: #bfd9ec;
+}
+
+.empty-menu
+{
+  padding-left: 0.5em;
+}
+
+.selected-item
+{
+  color: #606060;
+  background-color: #bfd9ec;
+}
+
+.menu ul li
+{
+  padding-left: 0;
+}
+
+.menu ul li.selected-item
+{
+  padding-left: 0.5em;
+}
+
+.menu ul li.selected-item span.label
+{
+/*  background: url(/weblocks-common/pub/images/menu/arrow.png) no-repeat center left;*/
+  padding-left: 1em;
+}
+
+.menu h1, .view .empty-menu, .menu ul li
+{
+  border-top-color: #f6fbfd;
+  border-bottom-color: #bfd9ec;
+}
+
+.menu h1, .menu .empty-menu, .menu ul
+{
+  border-left-color: #bfd9ec;
+  border-right-color: #bfd9ec;
+}
+
+.menu .extra-bottom-1
+{
+/*  background: url(/weblocks-common/pub/images/menu/bottom_background.png) repeat-x top;*/
+  border-top-color: #f6fbfd;
+}
+
+.menu .extra-bottom-2
+{
+/*  background: url(/weblocks-common/pub/images/menu/bottom_left.png) no-repeat top left;*/
+}
+
+.menu .extra-bottom-3
+{
+/*  background: url(/weblocks-common/pub/images/menu/bottom_right.png) no-repeat top right;*/
+}
+
+.menu a
+{
+  display: block;
+}
+
+/* IE 6 and 7 hover hack */
+*:first-child+html {} * html {} .menu a
+{
+  height: 1%;
+}
+
+.menu a:hover
+{
+  background-color: #bfd9ec;
+}
+
+
+
+/* Body */
+.dataseq form.dataseq-form fieldset
+{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dataseq form.dataseq-form
+{
+  margin: 0;
+  padding: 0;
+}
+
+.dataseq form.dataseq-form
+{
+  margin-bottom: 1em;
+}
+
+/* Mining Bar */
+.dataseq .data-mining-bar
+{
+  position: relative;
+  margin-bottom: 0.25em;
+  height: 1em;
+}
+
+.dataseq > .data-mining-bar
+{
+  height: auto;
+  min-height: 1em;
+}
+
+.dataseq .data-mining-bar .total-items
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Operations */
+.dataseq form .operations
+{
+  position: absolute;
+  right: 0;
+  margin-top: 0.25em;
+}
+
+.dataseq form.operations-form .operations input.submit,
+.dataseq form.dataseq-form .operations input.submit
+{
+  margin-left: 0.5em;
+}
+
+.dataseq form.operations-form,
+.dataseq form.operations-form fieldset
+{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Datagrid specific pagination styles */
+.dataseq div.pagination
+{
+  margin-top: -1em;
+}
+
+.dataseq div.pagination,
+.dataseq div.pagination form fieldset input
+{
+  font-size: x-small;
+}
+
+/* Flash */
+div.dataseq .flash
+{
+  position: relative;
+  _height: 1%; /* hasLayout IE 6 fix */
+}
+
+div.dataseq .flash .view .extra-top-1
+{
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  width: 5px;
+  overflow: hidden;
+}
+
+div.dataseq .flash .view .extra-top-2
+{
+  right: 0;
+  width: 5px;
+  border: none;
+  position: absolute;
+  margin-top: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+
+div.dataseq .flash .view .extra-top-3
+{
+  height: 2px;
+/*  background: url(/weblocks-common/pub/images/widget/flash/top_background.png) repeat-x;*/
+  display: block;
+  overflow: hidden;
+}
+
+div.dataseq .flash .view
+{
+  margin-bottom: 0.25em;
+/*  background-image: url(/weblocks-common/pub/images/widget/dataseq/flash/vertical_border.png);*/
+  background-repeat: repeat-y;
+  background-position: left;
+}
+
+div.dataseq .flash .view ul.messages
+{
+/*  background: url(/weblocks-common/pub/images/widget/dataseq/flash/vertical_border.png) repeat-y right;*/
+  border: none;
+  margin-bottom: 5px;
+}
+
+div.dataseq .flash .view ul.messages li
+{
+  background-image: none;
+  border: none;
+  padding-left: 0;
+}
+
+div.dataseq .flash .view ul.messages p
+{
+  text-align: center;
+  font-size: x-small;
+  padding-top: 1px;
+}
+
+div.dataseq .flash .view .extra-bottom-1
+{
+  background-image: none;
+  border-bottom: solid 2px #ead8c2;
+  margin-top: -14px;
+}
+
+div.dataseq .flash .view .extra-bottom-2
+{
+/*  background: url(/weblocks-common/pub/images/widget/dataseq/flash/bottom_left.png) no-repeat top left;*/
+  margin-top: -7px;
+}
+
+div.dataseq .flash .view .extra-bottom-3
+{
+/*  background: url(/weblocks-common/pub/images/widget/dataseq/flash/bottom_right.png) no-repeat top right;*/
+  margin-top: -7px;
+}
+
+
+/* Body */
+.datagrid
+{
+  margin-bottom: 1em;
+  position: relative;
+  _height: 1%; /* IE 6 fix */
+}
+
+/* Sorting */
+.sort-asc span
+{
+/*  background: url(/weblocks-common/pub/images/widget/datagrid/sort_bg_asc.png) repeat-x bottom;*/
+}
+
+.sort-asc span a
+{
+/*  background: url(/weblocks-common/pub/images/widget/datagrid/up_arrow.png) no-repeat right center;*/
+}
+
+.sort-desc span
+{
+/*  background: url(/weblocks-common/pub/images/widget/datagrid/sort_bg_desc.png) repeat-x top;*/
+}
+
+.sort-desc span a
+{
+/*  background: url(/weblocks-common/pub/images/widget/datagrid/down_arrow.png) no-repeat right center;*/
+}
+
+.sort-asc span a, .sort-desc span a,
+.sort-asc span, .sort-desc span
+{
+  display: block;
+  text-decoration: underline;
+}
+
+/* Selecting */
+p.datagrid-select-bar
+{
+  padding: 0;
+  margin: 0;
+  font-size: x-small;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+p.datagrid-select-bar strong
+{
+  color: gray;
+  font-family: Garamond, New York, serif;
+  font-weight: normal;
+}
+
+.datagrid form .select
+{
+  text-align: right;
+  width: 1em;
+}
+
+.datagrid table tbody tr.drilled-down td.select input
+{
+  visibility: hidden;
+}
+
+.datagrid table tbody tr.drilled-down td.select div
+{
+/*  background: url(/weblocks-common/pub/images/widget/arrow.png) no-repeat center center;*/
+}
+
+
+/* We need to adjust margins to properly style pagination and item
+operations */
+.datagrid .datagrid-body .view.table
+{
+  margin-bottom: 0;
+}
+
+
+
+.pagination .current-page,
+.pagination .total-pages
+{
+  font-weight: bolder;
+  font-size: small;
+}
+
+.pagination .page-info
+{
+  margin-top: 4px;
+}
+
+.pagination .viewing-label
+{
+  display: none;
+}
+
+.pagination form fieldset
+{
+  vertical-align: middle;
+}
+
+.pagination form,
+.pagination fieldset
+{
+  display: inline;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination fieldset
+{
+  margin-left: 0.75em;
+}
+
+.pagination form fieldset input.page-number
+{
+  width: 2em;
+  margin-right: 0.5em;
+}
+
+/* We need to increate input width on Safari */
+html[xmlns*=""] body:last-child .pagination form fieldset input.page-number
+{
+  width: 2.5em;
+}
+
+.pagination form fieldset input.item-not-validated
+{
+  border: solid 1px red;
+}
+
+.pagination div.extra-top-1,
+.pagination div.extra-top-2,
+.pagination div.extra-top-3,
+.pagination div.extra-bottom-1,
+.pagination div.extra-bottom-2,
+.pagination div.extra-bottom-3
+{
+  display: none;
+}
+
+.pagination form label span
+{
+  color: gray;
+}
+
+/* Fix the vertical alignment issue for IE 6 */
+* html .pagination form label span
+{
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+/* Fix the vertical alignment issue for IE 7 */
+*:first-child+html .pagination form label span
+{
+  display: inline-block;
+  padding-bottom: 3px;
+}
+
+/* Normalize alignment for all modern browsers (without IE 7) */
+html>/**/body .pagination .page-info,
+html>/**/body .pagination a
+{
+  vertical-align: middle;
+}
+
+.pagination .total-items
+{
+  display: block;
+}
+

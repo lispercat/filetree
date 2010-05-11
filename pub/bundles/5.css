@@ -1,0 +1,531 @@
+body
+{
+/*  background: url(/weblocks-common/pub/images/page/background.png);*/
+  text-align: center;
+  background: #001D23;
+}
+
+div.page-wrapper
+{
+  max-width: 70em;
+  min-width: 60em;
+
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* IE 6 specific hacks (has layout and min-width)*/
+* html div.page-wrapper
+{
+  width: 70em;
+}
+
+.page-wrapper .page-extra-top-1,
+.dialog .dialog-extra-top-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/page/top_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-top-2,
+.dialog .dialog-extra-top-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/page/top_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-top-3,
+.dialog .dialog-extra-top-3
+{
+  height: 5px;
+  margin-top: -5px;
+  margin-left: 5px;
+  margin-right: 5px;
+/*  background: url(/weblocks-common/pub/images/page/hor_border.png) repeat-x top;*/
+  overflow: hidden;
+}
+
+div#root, .dialog-body, .dialog h1
+{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+div#root
+{
+  padding: 1em;
+  min-height: 60em;
+  background-color: white;
+}
+
+/* IE 6 specific hacks (has layout and min-height)*/
+* html div#root
+{
+  height: 60em;
+}
+
+div#main-menu
+{
+  position: relative;
+}
+
+div#main-menu div.navigation-body
+{
+  margin-left: 16em;
+}
+
+div#main-menu div.menu
+{
+  position: absolute;
+  top: 0;
+}
+
+.page-wrapper .page-extra-bottom-1,
+.dialog .dialog-extra-bottom-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/page/bottom_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-bottom-2,
+.dialog .dialog-extra-bottom-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/page/bottom_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.page-wrapper .page-extra-bottom-3,
+.dialog .dialog-extra-bottom-3
+{
+  height: 5px;
+  margin-top: -5px;
+  margin-left: 5px;
+  margin-right: 5px;
+/*  background: url(/weblocks-common/pub/images/page/hor_border_bottom.png) repeat-x top;*/
+  overflow: hidden;
+}
+
+.header
+{
+  height: 52px;
+/*  background: url(/weblocks-common/pub/images/header/background.png) repeat-x;*/
+  margin-top: -5px;
+  margin-bottom: 1em;
+}
+
+.header .extra-top-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/header/top_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.header .extra-top-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/header/top_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.header .extra-top-3
+{
+  height: 42px;
+  margin-left: 5px;
+/*  background: url(/weblocks-common/pub/images/header/logo.png) no-repeat center left;*/
+}
+
+.header .extra-bottom-1
+{
+  height: 5px;
+/*  background: url(/weblocks-common/pub/images/header/bottom_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.header .extra-bottom-2
+{
+  height: 5px;
+  margin-top: -5px;
+/*  background: url(/weblocks-common/pub/images/header/bottom_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.footer
+{
+  margin-top: 1em;
+}
+
+.footer p#system-info
+{
+  margin-bottom: 0;
+}
+
+.footer p#contact-info
+{
+  margin-top: 0;
+}
+
+
+
+body
+{
+  font-size: small;
+  font-family: arial, helvetica, sans-serif;
+}
+
+a
+{
+  color: #A61E2E;
+}
+
+.view
+{
+/*  background: #ecf8d7 url(/weblocks-common/pub/images/widget/top_background.png) repeat-x;*/
+  margin-bottom: 1em;
+  _height: 0; /* IE specific hasLayout fix */
+}
+
+.view h1, .view fieldset h1
+{
+  background-color: #ecf8d7;
+}
+
+.view .extra-top-1
+{
+  height: 7px;
+/*  background: url(/weblocks-common/pub/images/widget/top_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.view .extra-top-2
+{
+  height: 7px;
+  margin-top: -7px;
+/*  background: url(/weblocks-common/pub/images/widget/top_right.png) no-repeat top right;*/
+  border-bottom: 1px solid #dbeac1;
+  overflow: hidden;
+}
+
+.view h1, .view fieldset h1,
+.long-form fieldset .validation-errors-summary h2.error-count
+{
+  margin: 0;
+  padding: 0;
+  padding-left: 0.4em;
+}
+
+.view h1, .view fieldset h1, .table table caption, div.empty p,
+.view .empty-navigation, .view ul li, .view fieldset ul li,
+.view table thead tr th,
+.view fieldset div.submit, .view div.submit,
+.long-form fieldset .validation-errors-summary h2.error-count,
+.form fieldset .validation-errors-summary .non-field-validation-errors
+{
+  border-top: 1px solid #fcfef6;
+}
+
+.view h1, .view fieldset h1, .table table caption, div.empty p,
+.view .empty-navigation, .view ul li, .view fieldset ul li,
+.view table thead tr th,
+.view fieldset div.submit, .view div.submit,
+.long-form fieldset .validation-errors-summary,
+.form fieldset .validation-errors-summary .non-field-validation-errors
+{
+  border-bottom: 1px solid #dbeac1;
+}
+
+.view h1, .view fieldset h1, .table table caption, div.empty p,
+.view .empty-navigation, .view ul, .view fieldset ul, .table table,
+.view fieldset div.submit, .view div.submit,
+.long-form fieldset .validation-errors-summary h2.error-count
+{
+  border-left: 2px solid #dbeac1;
+  border-right: 2px solid #dbeac1;
+}
+
+h1, h2
+{
+  font-size: large;
+  color: #29364F;
+  font-weight: bold;
+  font-family: Garamond, New York, serif;
+}
+
+.view h1 .action, .view fieldset h1 .action
+{
+  display: none;
+}
+
+.view ul, .view fieldset ul, .table table, .view fieldset div.submit,
+.view div.submit
+{
+  padding-left: 0;
+  margin: 0;
+}
+
+.view ul li, .view fieldset ul li, .menu ul li a
+{
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+.view div.submit, .form fieldset div.submit
+{
+  padding-left: 13.5em;
+}
+
+.view ul li .label, .view fieldset ul li label span.slot-name,
+.table table thead
+{
+  color: #808080;
+  font-weight: bold;
+}
+
+.view ul li .label, .view fieldset ul li label span.slot-name
+{
+  display: -moz-inline-box;
+  display: inline-block;
+  width: 12em;
+}
+
+.view .extra-bottom-1
+{
+  height: 7px;
+/*  background: url(/weblocks-common/pub/images/widget/bottom_background.png) repeat-x top;*/
+  overflow: hidden;
+}
+
+.view .extra-bottom-2
+{
+  height: 7px;
+  margin-top: -7px;
+/*  background: url(/weblocks-common/pub/images/widget/bottom_left.png) no-repeat top left;*/
+  overflow: hidden;
+}
+
+.view .extra-bottom-3
+{
+  height: 7px;
+  margin-top: -7px;
+/*  background: url(/weblocks-common/pub/images/widget/bottom_right.png) no-repeat top right;*/
+  overflow: hidden;
+}
+
+.missing
+{
+  font-style: italic;
+  color: #808080;
+}
+
+input[type=hidden]
+{
+  visibility: hidden;
+}
+
+#ajax-progress
+{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+/* IE 6 specific progress bar fix */
+* html #ajax-progress
+{
+  position: absolute;
+  left: expression((documentElement.scrollLeft
+                     + (documentElement.clientWidth - this.clientWidth))
+                   + 'px')
+  top: expression(documentElement.scrollTop + 'px');
+}
+
+/* Common styles for form, and data */
+.data, .form
+{
+  width: 27em;
+}
+
+/* Close button */
+span.close-button 
+{
+  display: block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+span.close-button a
+{
+  /* background: url(/weblocks-common/pub/images/close.png) no-repeat top left; */
+  padding-left: 1000em;
+}
+
+span.close-button a:hover
+{
+  /* background: url(/weblocks-common/pub/images/close_hl.png) no-repeat top left; */
+}
+
+/* Total Items */
+span.total-items
+{
+  color: gray;
+  font-size: x-small;
+}
+
+/* Text */
+.ellipsis
+{
+  color: gray;
+  font-weight: bold;
+}
+
+p.text
+{
+  margin: 0;
+}
+
+.view ul li p.text
+{
+  margin-left: 0.5em;
+}
+
+/* No elements */
+div.empty p
+{
+  padding-left: 0.5em;
+  margin: 0;
+}
+
+div.empty p span.caption
+{
+  color: #29364F;
+  font-weight: bold;
+  font-family: Garamond, New York, serif;
+}
+
+
+
+.graybox
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  z-index: 500;
+
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+}
+
+/* IE 6 specific fix for lack of 'position: fixed' implementation */
+* html .graybox
+{
+  position: absolute;
+  left: expression(documentElement.scrollLeft + 'px');
+  top: expression(documentElement.scrollTop + 'px');
+  width: expression(document.documentElement.clientWidth + 'px');
+  height: expression(document.documentElement.clientHeight + 'px');
+}
+
+.dialog
+{
+  position: fixed;
+  _position: absolute; /* Degrade to this in IE for now */
+  z-index: 725;
+  width: 10em;
+}
+
+.dialog-body
+{
+  padding: 1em;
+  _height: 1%; /* hasLayout */
+  background-color: white;
+}
+
+/* Style choice dialog */
+.choice .dialog-body, .modal .choice
+{
+/*  background: white url(/weblocks-common/pub/images/dialog/question.png) no-repeat 0.5em center;*/
+}
+
+.dialog h1, .modal h1
+{
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.dialog h1 span, .modal h1 span
+{
+/*  background: url(/weblocks-common/pub/images/horizontal_line.png) repeat-x bottom;*/
+  display: block;
+}
+
+.dialog h1 span
+{
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.choice
+{
+  text-align: center;
+}
+
+.choice form, .choice form fieldset, .choice p
+{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.choice p
+{
+  margin-bottom: 1em;
+}
+
+.choice input
+{
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+/* Style information dialog */
+.information .dialog-body, .modal .information
+{
+/*  background-image: url(/weblocks-common/pub/images/dialog/information.png);*/
+}
+
+/* Modal interaction */
+.modal
+{
+/*  background: url(/weblocks-common/pub/images/horizontal_line.png) repeat-x bottom;*/
+  padding-bottom: 2px;
+}
+
+.modal h1
+{
+  border: none;
+  margin: 0;
+}
+
+.modal .choice
+{
+  min-height: 48px;
+  _height: 48px;
+  background-position: left center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
