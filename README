@@ -1,0 +1,3 @@
+There was a discussion at http://groups.google.com/group/weblocks/browse_thread/thread/7c5272504740bfb how to model data with some minimum
+usage of extra widgets.
+Here is an example of a simple data tree (mimicking a file tree with drives, folders and files). 
